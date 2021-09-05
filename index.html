@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in and Sign Up Form</title>
-
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div class="container"><!--Primary container-->
@@ -14,15 +14,14 @@
                 <form action="#" class="sign-in-form"><!--sign-in form-->
                     <h2 class="title">Sign in</h2><!--Title of the form-->
                     <div class="input-field"><!--Container input username-->
-                        <i class="fas fa-user"><!--Icon for input username-->
+                        <i class="fas fa-user"></i><!--Icon for input username-->
                             <input type="text" placeholder="Username"><!--input username-->
-                        </i><!--End icon for input username-->
                     </div><!--End container input username-->
                     <div class="input-field"><!--Container input userpasssword-->
-                        <i class="fas fa-lock"><!--icon for input userpassword-->
+                        <i class="fas fa-lock"></i><!--icon for input userpassword-->
                             <input type="text" placeholder="Password"><!--input userpassword-->
-                        </i><!--End icon for input userpassword-->
                     </div><!--End container input userpassword-->
+                    <input class="btn solid" type="submit" value="Login"><!--Btn submit-->
                     <p class="social-text">Or Sign in with social platforms</p><!--Other options with sig-in-->
                     <div class="social-media"><!--Social media container-->
                         <a href="#" class="social-icon"><!--link facebook-->
@@ -34,6 +33,34 @@
                     </div><!--End social container-->
                 </form><!--End sign-in sign-up form-->
             </div>
+
+            <div class="signup-signup"><!--Signup Container-->
+                <form action="#" class="sign-up-form"><!--sign-in form-->
+                    <h2 class="title">Sign UP</h2><!--Title of the form-->
+                    <div class="input-field"><!--Container input username-->
+                        <i class="fas fa-user"></i><!--Icon for input username-->
+                            <input type="text" placeholder="Username"><!--input username-->
+                    </div><!--End container input username-->
+                    <div class="input-field"><!--Container input email-->
+                        <i class="fas fa-envelope"></i><!--icon for input email-->
+                            <input type="email" placeholder="Email"><!--input email-->
+                    </div><!--End container input email-->
+                    <div class="input-field"><!--Container input userpasssword-->
+                        <i class="fas fa-lock"></i><!--icon for input userpassword-->
+                            <input type="text" placeholder="Password"><!--input userpassword-->
+                    </div><!--End container input userpassword-->
+                    <input class="btn solid" type="submit" value="Login"><!--Btn submit-->
+                    <p class="social-text">Or Sign Up with social platforms</p><!--Other options with sig-in-->
+                    <div class="social-media"><!--Social media container-->
+                        <a href="#" class="social-icon"><!--link facebook-->
+                            <i class="fab fa-microsoft"></i><!--icon facebook-->
+                        </a>
+                        <a href="#" class="social-icon"><!--link github-->
+                            <i class="fab fa-github"></i><!--icon github-->
+                        </a>
+                    </div><!--End social container-->
+                </form><!--End sign-in sign-up form-->
+            </div><!--End signup Container-->
         </div>
     </div><!--End primary container-->
     <div class="panels-container">
