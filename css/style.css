@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 :root{
-    --primary:#021bfa;
-    --secondary:#72b7f8;
-    --inputs-box:#bbbbbb;
+    --primary:#1E4781;
+    --secondary:#153399;
+    --inputs-box:#3F4446;
+    --icon:#C7C3BD;
+    --btn-color:#fff;
 }
 * {
   margin: 0;
@@ -18,7 +20,7 @@ input {
 .container {
   position: relative;
   width: 100%;
-  background-color:#333;
+  background-color:#272A2B;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -31,7 +33,7 @@ input {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, var(--secondary) 0%, var(--primary) 100%);
+  background-image: linear-gradient(-45deg, var(--primary) 0%, var(--secondary) 100%);
 
   transition: 1.8s ease-in-out;
   border-radius: 50%;
@@ -92,7 +94,7 @@ form.sign-up-form {
 .input-field i {
   text-align: center;
   line-height: 55px;
-  color: #333;
+  color: var(--icon);
   font-size: 1.1rem;
 }
 
@@ -103,12 +105,18 @@ form.sign-up-form {
   line-height: 1;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #333;
+  color: var(--icon);
 }
 
 .input-field input::placeholder {
-  color: #333;
+  color: var(--icon);
   font-weight: 500;
+}
+
+#sign-up-btn:hover, 
+#sign-in-btn:hover{
+  background-color: var(--btn-color);
+  color: #153399;
 }
 
 .btn {
@@ -118,18 +126,17 @@ form.sign-up-form {
   outline: none;
   border-radius: 48px;
   cursor: pointer;
-  border-color: #fff;
+  border-color: var(--btn-color);
   background-color: var(--secondary);
-  color: #fff;
+  color: var(--btn-color);
   text-transform: uppercase;
   font-weight: 600;
   margin: 10px 0;
   transition: all 0.5s;
 }
-
 .btn:hover {
-  background-color: #ffffff;
-  color: var(--secondary);
+  background-color: var(--btn-color);
+  color: #3F4446;
   border-radius: 0;
 }
 
@@ -146,21 +153,21 @@ form.sign-up-form {
 .social-icon {
   height: 46px;
   width: 46px;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid #fff;
   margin: 0 0.45rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-size: 1.3rem;
   border-radius: 50%;
   transition: all 0.5s;
 }
 
 .social-icon:hover {
-  color:var(--secondary);
-  border-color: var(--secondary);
+  color:#6A63F6;
+  border-color: #6A63F6;
 }
 
 .signin-signup {
@@ -207,7 +214,7 @@ form.sign-up-form {
 }
 
 .panel .content {
-  color: #fff;
+  color: var(--btn-color);
   transition: 0.9s 0.6s ease-in-out;
 }
 
@@ -225,7 +232,7 @@ form.sign-up-form {
 .btn.transparent {
   margin: 0;
   background: none;
-  border: 2px solid #fff;
+  border: 2px solid var(--btn-color);
   width: 130px;
   height: 41px;
   font-weight: 600;
